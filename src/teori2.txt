@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+import soal_No3.main;
+public class arrayPelanggan{
+    private String toko;
+    private String daerah;
+
+    public arrayPelanggan(){}
+
+    public arrayPelanggan(String toko, String daerah){
+        this.toko = toko;
+        this.daerah = daerah;
+    }
+
+    public String gettoko(){ return this.toko;}
+
+    public void settoko(String toko){ this.toko = toko;}
+
+    public String getdaerah(){ return this.daerah;}
+
+    public void setdaerah(String daerah){ this.daerah = daerah;}
+
+    
+}
+
+public class teori2 {
+    public static void main(String[] args) {
+        ArrayList<arrayPelanggan> Panther = new ArrayList<>();
+        arrayPelanggan tokoku = new arrayPelanggan();
+        tokoku.settoko("Toko Sejahtera");
+        tokoku.setdaerah("Debong");
+        tokoku = new arrayPelanggan("Toko Sejahteera", "Debong");
+
+        for(i=0;i<tokoku.lenght();i++){
+            System.out.print(arrayPelanggan.get(i).getdaerah(i));
+        }
+    }
+}
